@@ -19,16 +19,17 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import java.util.List;
 
+
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TestSearchResultsRelevancy extends BaseTest {
 
     @Story("At least one relevant product should be present in the search results")
     @DisplayName("Result Relevancy test")
     @Severity(SeverityLevel.CRITICAL)
-    @ParameterizedTest(name = "{0}: search query={2}")
+    @ParameterizedTest(name = "search query={0}")
     @CsvFileSource(resources = "/search-queries.csv")
-    public void testAtLeastOneRelevantResult(String connectorId, String lang, String searchQuery) throws ConnectorException {
-        Connector connector = createConnector(connectorId);
+    public void testAtLeastOneRelevantResult(String searchQuery) throws ConnectorException {
+        Connector connector = createConnector();
         final Validator validator = new TitleKeywordValidator(new SingleValidResultFunction());
         final double loyaltyLevel = 1.0;
 
@@ -41,8 +42,19 @@ public class TestSearchResultsRelevancy extends BaseTest {
 
         ResultSet resultSet = new ResultSet(results);
         validator.validate(queryWords, resultSet);
+
+        //building detailed report including specific search results
+        resultSet.getResults().forEach(result -> {
+            try {
+                assertResultIsRelevant(result);
+            } catch (Throwable th) {
+                //ignoring this error
+            }
+        });
+
+
         double score = resultSet.getScore();
-        Assertions.assertEquals(loyaltyLevel, score, "Search result Score is lower than expected.");
+        Assertions.assertEquals(loyaltyLevel, score, "At least one relevant product should be present in the search results.");
 
     }
 }
