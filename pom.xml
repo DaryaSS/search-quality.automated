@@ -24,7 +24,6 @@
         <allure.maven.version>2.9</allure.maven.version>
         <allure.results.dir>report/allure-results</allure.results.dir>
         <allure.reports.dir>report/allure-reports</allure.reports.dir>
-        <alumi-search.version>0.1</alumi-search.version>
         <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
     </properties>
 
