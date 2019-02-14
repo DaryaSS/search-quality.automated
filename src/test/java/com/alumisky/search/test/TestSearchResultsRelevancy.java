@@ -26,9 +26,9 @@ public class TestSearchResultsRelevancy extends BaseTest {
     @Story("At least one relevant product should be present in the search results")
     @DisplayName("Result Relevancy test")
     @Severity(SeverityLevel.CRITICAL)
-    @ParameterizedTest(name = "search query={0}")
+    @ParameterizedTest(name = "search query={1}")
     @CsvFileSource(resources = "/search-queries.csv")
-    public void testAtLeastOneRelevantResult(String searchQuery) throws ConnectorException {
+    public void testAtLeastOneRelevantResult(String testCategory, String searchQuery) throws ConnectorException {
         Connector connector = createConnector();
         final Validator validator = new TitleKeywordValidator(new SingleValidResultFunction());
         final double loyaltyLevel = 1.0;
@@ -54,7 +54,11 @@ public class TestSearchResultsRelevancy extends BaseTest {
 
 
         double score = resultSet.getScore();
-        Assertions.assertEquals(loyaltyLevel, score, "At least one relevant product should be present in the search results.");
+        Assertions.assertEquals(
+                loyaltyLevel,
+                score,
+                testCategory + ": At least one relevant product should be present in the search results."
+        );
 
     }
 }

@@ -27,9 +27,9 @@ public class TestSearchResultsOrder extends BaseTest {
     @Story("Product title should contain all query terms. Most relevant results should go first.")
     @DisplayName("Result Display Order")
     @Severity(SeverityLevel.CRITICAL)
-    @ParameterizedTest(name = "search query={0}")
+    @ParameterizedTest(name = "search query={1}")
     @CsvFileSource(resources = "/search-queries.csv")
-    public void testProductOrder(String searchQuery) throws ConnectorException {
+    public void testProductOrder(String testCategory, String searchQuery) throws ConnectorException {
 
         final Connector connector = createConnector();
         final Validator validator = new TitleKeywordValidator(new MobileScoreFunction());
@@ -51,7 +51,7 @@ public class TestSearchResultsOrder extends BaseTest {
         });
 
         double score = resultSet.getScore();
-        Assertions.assertTrue(score >= loyaltyLevel, "Product title should contain all query terms. Most relevant results should go first.");
+        Assertions.assertTrue(score >= loyaltyLevel, testCategory + ": Product title should contain all query terms. Most relevant results should go first.");
 
 
     }
