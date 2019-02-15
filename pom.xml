@@ -86,7 +86,7 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
-            <version>2.7.0</version>
+            <version>2.9.0</version>
         </dependency>
 
     </dependencies>
@@ -111,7 +111,10 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.9</version>
                 <configuration>
-                    <reportVersion>2.3.1</reportVersion>
+                    <reportVersion>2.9.0</reportVersion>
+                    <allureDownloadUrl>
+                        http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/%s/allure-commandline-%s.zip
+                    </allureDownloadUrl>
                     <reportDirectory>${basedir}/report/allure-reports</reportDirectory>
                     <buildDirectory>${project.basedir}/report</buildDirectory>
                 </configuration>
