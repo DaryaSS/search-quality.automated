@@ -1,62 +1,62 @@
-fiskars axe
-fiskars splitting axe
-fiskars super splitting axe
-fiskars chopping axe
-fiskars brush axe
-fiskars hatchet
-fiskars maul
-fiskars hookaroon
-fiskars machete
-fiskars axe XXS
-fiskars axe XS
-fiskars axe S
-fiskars axe M
-fiskars axe L
-fiskars axe XL
-fiskars axe XXL
-fiskars axe X5
-fiskars axe X7
-fiskars axe X10
-fiskars axe X11
-fiskars axe X17
-fiskars axe X21
-fiskars axe X25
-fiskars axe X27
-fiskars axe 14 inch
-fiskars axe 23.5 inch
-fiskars axe 28 inch
-fiskars axe 289 inch
-fiskars axe 36 inch
-fiskars hookaroon 28 inch
-fiskars hookaroon 12 inch
-fiskars hatchet 14 inch
-fiskars hatchet 18 inch
-fiskars hatchet X7
-fiskars brush axe 19 inch
-fiskars splitting axe S
-fiskars splitting axe X11
-fiskars splitting axe XXL
-fiskars splitting axe X27
-fiskars splitting axe XL
-fiskars splitting axe X25
-fiskars splitting axe L
-fiskars splitting axe X21
-fiskars splitting axe M
-fiskars splitting axe X17
-fiskars splitting axe 17 inch
-fiskars splitting axe 23.5 inch
-fiskars splitting axe 28 inch
-fiskars splitting axe 36 inch
-fiskars chopping axe S
-fiskars chopping axe X10
-fiskars chopping axe XS
-fiskars chopping axe X7
-fiskars chopping axe XXS
-fiskars chopping axe X5
-fiskars chopping axe X15
-fiskars chopping axe 15 inch
-fiskars chopping axe 23.5 inch
-fiskars chopping axe 28 inch
-fiskars maul 36 inch
-fiskars blade sharpener
-fiskars sharpener
+Critical,fiskars axe
+Critical,fiskars splitting axe
+Critical,fiskars super splitting axe
+Critical,fiskars chopping axe
+Critical,fiskars brush axe
+Critical,fiskars hatchet
+Critical,fiskars maul
+Critical,fiskars hookaroon
+Critical,fiskars machete
+Major   ,fiskars axe XXS
+Major   ,fiskars axe XS
+Major   ,fiskars axe S
+Major   ,fiskars axe M
+Major   ,fiskars axe L
+Major   ,fiskars axe XL
+Major   ,fiskars axe XXL
+Major   ,fiskars axe X5
+Major   ,fiskars axe X7
+Major   ,fiskars axe X10
+Major   ,fiskars axe X11
+Major   ,fiskars axe X17
+Major   ,fiskars axe X21
+Major   ,fiskars axe X25
+Major   ,fiskars axe X27
+Major   ,fiskars axe 14 inch
+Trivial ,fiskars axe 23.5 inch
+Trivial ,fiskars axe 28 inch
+Trivial ,fiskars axe 289 inch
+Trivial ,fiskars axe 36 inch
+Trivial ,fiskars hookaroon 28 inch
+Trivial ,fiskars hookaroon 12 inch
+Trivial ,fiskars hatchet 14 inch
+Trivial ,fiskars hatchet 18 inch
+Trivial ,fiskars hatchet X7
+Trivial ,fiskars brush axe 19 inch
+Trivial ,fiskars splitting axe S
+Minor   ,fiskars splitting axe X11
+Minor   ,fiskars splitting axe XXL
+Minor   ,fiskars splitting axe X27
+Minor   ,fiskars splitting axe XL
+Minor   ,fiskars splitting axe X25
+Minor   ,fiskars splitting axe L
+Minor   ,fiskars splitting axe X21
+Minor   ,fiskars splitting axe M
+Minor   ,fiskars splitting axe X17
+Trivial ,fiskars splitting axe 17 inch
+Trivial ,fiskars splitting axe 23.5 inch
+Trivial ,fiskars splitting axe 28 inch
+Trivial ,fiskars splitting axe 36 inch
+Minor   ,fiskars chopping axe S
+Minor   ,fiskars chopping axe X10
+Minor   ,fiskars chopping axe XS
+Minor   ,fiskars chopping axe X7
+Minor   ,fiskars chopping axe XXS
+Minor   ,fiskars chopping axe X5
+Minor   ,fiskars chopping axe X15
+Minor   ,fiskars chopping axe 15 inch
+Trivial ,fiskars chopping axe 23.5 inch
+Trivial ,fiskars chopping axe 28 inch
+Trivial ,fiskars maul 36 inch
+Trivial ,fiskars blade sharpener
+Trivial ,fiskars sharpener
