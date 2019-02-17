@@ -31,7 +31,6 @@
         <allure-junit5.version>2.7.0</allure-junit5.version>
         <allure.results.dir>report/allure-results</allure.results.dir>
         <allure.reports.dir>report/allure-reports</allure.reports.dir>
-
         <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
     </properties>
 
