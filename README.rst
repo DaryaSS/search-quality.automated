@@ -17,6 +17,25 @@ Intent-based validation
 --------------------------------
 Clear intent makes search result validation way more simpler and straightforward. There are several validation strategies possible. The actual strategy implementation is out of scope of this project. 
 
+Search Quality API defines the following set of "verdicts" for a product being returned: relevant, near, misplaced, irrelevant, undefined:
+
+Relevant 
+  The product ranking is completely relevant.
+
+Near 
+  The product ranking is not a perfect match, but it is clearly reasonable 
+  for it to be ranked highly.
+
+Misplaced 
+  It is obvious why the search engine returned the result, but it clearly shouldn't be ranked highly.
+
+Irrelevant
+  The result has no apparent relationship to the customer’s search.
+
+Undefined 
+  For some reason the result is undefined and can not be validated.
+
+
 Intent-based approach is pretty intuitive and straightfowrad. So, if you are searching for "fiskars splitting axe" you do not expect to see any other brands, any other tools etc. Obviously, chopping axe is definitely not an option, as well as any other type on an axe.
 
 .. image:: doc/images/amazon-example-01.png?raw=true
