@@ -35,7 +35,6 @@ Irrelevant
 Undefined 
   For some reason the result is undefined and can not be validated.
 
-
 Intent-based approach is pretty intuitive and straightfowrad. So, if you are searching for "fiskars splitting axe" you do not expect to see any other brands, any other tools etc. Obviously, chopping axe is definitely not an option, as well as any other type on an axe.
 
 .. image:: doc/images/amazon-example-01.png?raw=true
@@ -44,10 +43,29 @@ Intent-based approach is pretty intuitive and straightfowrad. So, if you are sea
 --------
 Features
 --------
-- Reliable search quality verification
-- Proper reporting with root cause analysis
-- Historical trends
 - Extendable test set
+- Automated and reliable search quality verification
+- Plugginable validation/verification scenarios
+- Detailed reporting with root cause analysis
+- Historical trends
+
+-------------
+Trends
+-------------
+.. image:: doc/images/a06.png?raw=true
+   :align: center
+
+--------------
+Passing tests
+--------------
+.. image:: doc/images/a03.png?raw=true
+   :align: center
+
+--------------
+Failing test
+--------------
+.. image:: doc/images/a02.png?raw=true
+   :align: center
 
 -------
 License
