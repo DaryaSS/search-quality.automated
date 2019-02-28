@@ -10,6 +10,7 @@
 
     <properties>
         <alumi-quality.version>0.1.0</alumi-quality.version>
+        <alumi-quality.impl.version>0.1.1</alumi-quality.impl.version>
 
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,7 +32,6 @@
         <allure-junit5.version>2.7.0</allure-junit5.version>
         <allure.results.dir>report/allure-results</allure.results.dir>
         <allure.reports.dir>report/allure-reports</allure.reports.dir>
-
         <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
     </properties>
 
@@ -46,7 +46,7 @@
         <dependency>
             <groupId>com.alumisky</groupId>
             <artifactId>alumi-quality.impl</artifactId>
-            <version>${alumi-quality.version}</version>
+            <version>${alumi-quality.impl.version}</version>
         </dependency>
 
         <!--JUnit 5-->
