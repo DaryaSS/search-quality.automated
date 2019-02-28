@@ -5,7 +5,7 @@ Search Quality Automated
 -----------
 Description
 -----------
-No matter how cool your search solution is, without a reliable way of testing it you will not be able to do any improvement and do not break something valuable. Searching visitors usually have more specific shopping intents, comparing to visitors who are simply browsing, so it is crucial to make sure search always works as expected. 
+No matter how cool your search solution is, without a reliable way of testing it you will not be able to do any improvement and do not break something valuable. 
 
 Even a tiny increase in search result quality might have a noticeable effect on conversion rate.
 Naturally, you can use exit-rate to judge if your search needs improvements and do required adjustments, but will you be able to make sure those changes are safe? What if improved relevancy for a specific category breaks search for several other categories?
@@ -35,35 +35,43 @@ Irrelevant
 Undefined 
   For some reason the result is undefined and can not be validated.
 
-Intent-based approach is pretty intuitive and straightfowrad. So, if you are searching for "fiskars splitting axe" you do not expect to see any other brands, any other tools etc. Obviously, chopping axe is definitely not an option, as well as any other type on an axe.
+Intent-based approach is pretty intuitive and straightforward. So, if you are searching for "fiskars splitting axe" you do not expect to see any other brands, any other tools etc. Obviously, chopping axe is definitely not an option, as well as any other type on an axe.
 
 .. image:: doc/images/amazon-example-01.png?raw=true
    :align: center
+
+Searching visitors usually have more specific shopping intents, comparing to visitors who are simply browsing, so it is crucial to make sure search always works as expected. 
 
 --------
 Features
 --------
 - Extendable test set
 - Automated and reliable search quality verification
-- Plugginable validation/verification scenarios
+- Various validation/verification strategies
 - Detailed reporting with root cause analysis
 - Historical trends
 
 -------------
 Trends
 -------------
+High-level statistics is available in a way it can help to quickly understand the actual situation and overall trend. 
+
 .. image:: doc/images/a06.png?raw=true
    :align: center
 
 --------------
 Passing tests
 --------------
+Passing test still provides all the details regarding the actual result set and the products. So, if any deep inspection needed it can be done.
+
 .. image:: doc/images/a03.png?raw=true
    :align: center
 
 --------------
 Failing test
 --------------
+It case test fails deep investigation is a must, so the solution provides all the required details, including the list of the product returned for the query. Useful marks highlights non relevant products, simplifying analysis.   
+
 .. image:: doc/images/a02.png?raw=true
    :align: center
 
