@@ -51,7 +51,6 @@ Features
 - Detailed reporting with root cause analysis
 - Historical trends
 
--------------
 Trends
 -------------
 High-level statistics is available in a way it can help to quickly understand the actual situation and overall trend. 
@@ -59,7 +58,6 @@ High-level statistics is available in a way it can help to quickly understand th
 .. image:: doc/images/a06.png?raw=true
    :align: center
 
---------------
 Passing tests
 --------------
 Passing test still provides all the details regarding the actual result set and the products. So, if any deep inspection needed it can be done.
@@ -67,13 +65,37 @@ Passing test still provides all the details regarding the actual result set and 
 .. image:: doc/images/a03.png?raw=true
    :align: center
 
---------------
 Failing test
 --------------
 It case test fails deep investigation is a must, so the solution provides all the required details, including the list of the product returned for the query. Useful marks highlights non relevant products, simplifying analysis.   
 
 .. image:: doc/images/a02.png?raw=true
    :align: center
+
+How to run
+--------------
+The package contains two scripts:
+
+report.sh
+    Executes the test set and updates the history.
+    
+web.sh
+    Starts python SimpleHTTPServer on 9040
+
+---------------------------
+How to modify the test set
+---------------------------
+The test set itself is just an ordinary CSV document (located at *src/test/resources/search-queries.csv*)
+
+::
+
+    Critical,fiskars axe
+    Critical,fiskars splitting axe
+    Critical,fiskars super splitting axe
+    Critical,fiskars chopping axe
+    Major   ,fiskars axe XXS
+    Major   ,fiskars axe XS
+    Major   ,fiskars axe S
 
 -------
 License
@@ -89,7 +111,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-
-
-
