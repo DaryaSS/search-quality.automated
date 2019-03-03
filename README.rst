@@ -1,5 +1,5 @@
 ============================
-Search Quality Automated
+Intent-based Search Quality
 ============================
 
 -----------
@@ -67,20 +67,23 @@ Passing test still provides all the details regarding the actual result set and 
 
 Failing test
 --------------
-It case test fails deep investigation is a must, so the solution provides all the required details, including the list of the product returned for the query. Useful marks highlights non relevant products, simplifying analysis.   
+In case test fails deep investigation is a must, so the solution provides all the required details, including the list of the product returned for the query. Useful marks highlights non relevant products, simplifying the analysis.   
 
 .. image:: doc/images/a02.png?raw=true
    :align: center
 
+--------------
 How to run
 --------------
 The package contains two scripts:
 
 report.sh
-    Executes the test set and updates the history.
+    Executes the test set and updates execution history.
     
 web.sh
-    Starts python SimpleHTTPServer on 9040
+    Starts python SimpleHTTPServer on 9040 in order to server `Allure`_ powered dashboard
+
+.. _Allure: https://github.com/allure-framework
 
 ---------------------------
 How to modify the test set
